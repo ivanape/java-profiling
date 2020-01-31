@@ -25,6 +25,7 @@ $script = <<-SCRIPT
     cd perf-map-agent
     cmake .
     make
+    git clone https://github.com/brendangregg/FlameGraph
     
     cd ..
     git clone https://github.com/jvm-profiling-tools/async-profiler
@@ -34,6 +35,8 @@ $script = <<-SCRIPT
 
     cd ..
     git clone https://github.com/saquibkhan/javaFlameGraph
+    cd javaFlameGraph
+    git clone https://github.com/brendangregg/FlameGraph
 
     git clone https://github.com/lhotari/jfr-report-tool
     cd jfr-report-tool
