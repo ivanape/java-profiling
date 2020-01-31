@@ -1,0 +1,5 @@
+.vagrant
+.vscode
+src
+temp
+!gs-rest-service/src
