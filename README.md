@@ -37,7 +37,7 @@ Generate flame graph with jfr-report-tool.
 Run `gs-rest-service` demo application with following options:
 
 - `java -XX:+PreserveFramePointer -XX:+UnlockDiagnosticVMOptions -XX:+DebugNonSafepoints -jar gs-rest-service-0.1.0.jar`
-- `bin/create-java-perf-map.sh <PID>`
+- `./create-java-perf-map.sh <PID>`
 - `perf record -F 99 -p <PID> -g`
 - `perf script > out.perf`
 - `./FlameGraph/stackcollapse-perf.pl out.perf > out.folded`
